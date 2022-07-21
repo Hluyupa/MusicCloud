@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --maximum-green: #61892fff;
+    --yellow-green: #86c232ff;
+    --black: #222629ff;
+    --white: #f3eff5ff;
+    --gray: #6c6f6fff;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0px;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.layout{
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(100px, auto)/auto 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.footer{
+    grid-area: footer;
+}
