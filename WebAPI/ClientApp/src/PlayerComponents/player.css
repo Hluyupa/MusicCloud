@@ -1,0 +1,33 @@
+.player{
+    width: 300px;
+    height: 300px;
+   
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+    grid-template-areas: 
+        "music-name"
+        "music-album-image"
+        "player-slider"
+        "player-control-panel-buttons";
+    
+}
+
+.music-name{
+    grid-area: music-name;
+    background-color: aqua;
+}
+
+.music-album-image{
+    grid-area: music-album-image;
+    background-color: rebeccapurple;
+}
+
+.player-slider{
+    grid-area: player-slider;
+    background-color: burlywood;
+}
+
+.player-buttons{
+    grid-area: player-buttons;
+    
+}

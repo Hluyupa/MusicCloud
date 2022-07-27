@@ -1,0 +1,42 @@
+.background-pause-btn, .border-pause-btn{
+    position: absolute;
+
+}
+
+.background-pause-btn rect{
+    fill:var(--white);
+}
+
+.border-pause-btn rect{
+    stroke: var(--yellow-green);
+    stroke-width: 4;
+    fill: none;
+}
+
+.border-pause-btn{
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.5s;
+}
+
+.border-pause-btn:nth-child(2){
+    top: 55px;
+}
+
+.border-pause-btn:nth-child(3){
+    bottom: 55px;
+}
+
+.pause-btn:hover .border-pause-btn{
+    opacity: 1;
+}
+
+.pause-btn:hover .border-pause-btn:nth-child(2){
+    top:0px;
+}
+
+.pause-btn:hover .border-pause-btn:nth-child(3){
+    bottom:0px;
+}
+
+

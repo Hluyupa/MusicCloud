@@ -11,6 +11,7 @@
 html, body, #root {
     height: 100%;
     margin: 0px;
+    font-size: 24px;
 }
 
 body{
@@ -24,25 +25,22 @@ body{
 .layout{
     min-height: 100%;
     display: grid;
-    grid-template: minmax(100px, auto) 1fr minmax(100px, auto)/auto 1fr;
+    grid-template: minmax(100px, auto) 1fr minmax(100px, auto)/1fr;
     grid-template-areas: 
-        "header header"
-        "sidebar main"
-        "footer footer";
+        "header"
+        "main"
+        "footer";
 }
 
 .header{
     grid-area: header;
 }
-
-.sidebar{
-    grid-area: sidebar;
-}
-
 .main{
     grid-area: main;
     height: 100%;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-template-rows: 1fr;
 }
 

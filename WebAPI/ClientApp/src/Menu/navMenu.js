@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MenuButton from "../Buttons/menuButton.js";
+import MenuButton from "./menuButton.js";
 import './navMenu.css'
 
 export default class NavMenu extends React.Component{
@@ -28,7 +28,7 @@ export default class NavMenu extends React.Component{
                 <ul className="menu-item-list">
                     {list}
                 </ul>
-                <MenuButton onClick={this.handleClick}/>
+                <MenuButton isOpen={this.state.menuIsOpen} onClick={this.handleClick}/>
             </nav>
         );
     }

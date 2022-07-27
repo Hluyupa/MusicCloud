@@ -1,0 +1,24 @@
+.border-play-btn{
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: 0.5s;
+    bottom: -50px;
+}
+
+.border-play-btn path{
+    stroke: var(--yellow-green);
+    fill: none;
+}
+
+.background-play-btn, .border-play-btn{
+    position: absolute;
+}
+
+.background-play-btn path{
+    fill: var(--white);
+}
+
+.play-btn:hover .border-play-btn{
+    opacity: 1;
+    bottom:2.5px;
+}

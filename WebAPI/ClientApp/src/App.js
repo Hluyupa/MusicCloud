@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import PageSwitcher from "./Components/pageSwitcher";
 import NavMenu from "./Menu/navMenu";
+import Player from "./PlayerComponents/player";
 import './App.css'
 
 export default class App extends React.Component{
@@ -26,7 +27,7 @@ export default class App extends React.Component{
                 </header>
                 <NavMenu menuItems={menuElements}/>
                 <main className="main">
-
+                    <Player/>
                 </main>
                 <footer className="footer">
 

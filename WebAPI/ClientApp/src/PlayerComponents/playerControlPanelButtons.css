@@ -1,0 +1,7 @@
+.player-control-panel-buttons{
+    display: flex;
+    grid-area: player-control-panel-buttons;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
