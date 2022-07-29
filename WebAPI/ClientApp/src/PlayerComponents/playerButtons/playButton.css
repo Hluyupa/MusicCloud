@@ -15,10 +15,10 @@
 }
 
 .background-play-btn path{
-    fill: var(--white);
+    
 }
 
 .play-btn:hover .border-play-btn{
     opacity: 1;
-    bottom:2.5px;
+    bottom:0px;
 }
