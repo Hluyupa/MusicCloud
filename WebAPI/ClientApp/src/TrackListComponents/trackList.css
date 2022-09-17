@@ -1,0 +1,40 @@
+/*.borders-track-list{
+    width: 80%;
+    height: 400px;
+   
+    position: relative;
+   
+}
+
+.borders-track-list::before, .borders-track-list::after{
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    background-color: var(--yellow-green);
+    height: 3px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 5px var(--yellow-green);
+}*/
+
+.track-list{
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+    grid-area: track-list;
+    
+}
+
+/*.track-list::-webkit-scrollbar{
+    width:3px;
+    
+}
+
+.track-list::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.track-list::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: var(--yellow-green);
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px 5px var(--yellow-green);
+}*/

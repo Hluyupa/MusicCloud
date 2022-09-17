@@ -1,11 +1,3 @@
-:root {
-    --maximum-green: #61892fff;
-    --yellow-green: #86c232ff;
-    --black: #222629ff;
-    --white: #f3eff5ff;
-    --gray: #6c6f6fff;
-}
-
 .menu{
     display: grid;
     grid-template-rows: 1fr;
@@ -13,7 +5,7 @@
     align-items: center;
     grid-template-areas: 
         "menu-item-list open-close-menu-btn";
-    position: absolute;
+    position: fixed;
     height: 100%;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -21,46 +13,46 @@
 
 .menu-item-list{
     grid-area: menu-item-list;
-
+    height: auto;
     margin: 0px;
-    padding: 0px;
-    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow-y: visible;
     overflow-x: hidden;
 }
 
-.menu-item-list li{
+.menu-item{
     width: 200px;
     border: 0px;
     display: flex;
     align-items: center;
     transition-duration: 1s;
-    
     background-color: transparent;
     font-size: 24px;
     padding: 1em;
     position: relative;
-    
 }
 
-.menu-item-list li::before, .menu-item-list li::after{
+.menu-item::before, .menu-item::after{
     content: '';
     position: absolute;
     background: linear-gradient(to right, var(--yellow-green), transparent);
     height:2px;
     width: 100%;
     left: 100%;
-    top: 0%;
     transition-duration: 0.2s;
 }
 
-.menu-item-list li::after{
-    
+.menu-item::after{
     top: 100%;
-    transform: translate(0, -100%);
-   
 }
 
-.menu-item-list li:hover{
+.menu-item::before{
+    transform: translate(0, -100%);
+    top:0%;
+}
+
+.menu-item:hover{
     cursor: pointer;
     animation-name: menuItemAnim;
     animation-duration: 0.2s;
@@ -68,7 +60,7 @@
     animation-fill-mode: forwards;
 }
 
-.menu-item-list li:hover::before, .menu-item-list li:hover::after{
+.menu-item:hover::before, .menu-item:hover::after{
     left: 0px;
 }
 

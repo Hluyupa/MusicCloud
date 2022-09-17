@@ -1,0 +1,25 @@
+.background-next-btn *{
+    fill:var(--white);
+}
+
+.background-next-btn, .border-next-btn{
+    position: absolute;
+}
+
+.border-next-btn *{
+    fill: none;
+    stroke: var(--yellow-green);
+    stroke-width:4;
+}
+
+.border-next-btn{
+    right:-55px;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.5s;
+}
+
+.next-btn:hover .border-next-btn{
+    opacity: 1;
+    right: 0px;
+}  

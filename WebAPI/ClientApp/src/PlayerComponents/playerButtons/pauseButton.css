@@ -4,7 +4,7 @@
 }
 
 .background-pause-btn rect{
-    
+    transition-duration: 0.25s;
 }
 
 .border-pause-btn rect{

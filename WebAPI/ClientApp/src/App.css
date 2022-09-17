@@ -8,8 +8,16 @@
     --gray: #6c6f6fff;
 }
 
+ul{
+    padding: 0px;
+    list-style: none;
+}
+
 html, body, #root {
-    height: 100%;
+    
+    min-width: 100%;
+    min-height: 100%;
+
     margin: 0px;
     font-size: 24px;
 }
@@ -23,6 +31,7 @@ body{
 }
 
 .layout{
+    min-width: 100%;
     min-height: 100%;
     display: grid;
     grid-template: minmax(100px, auto) 1fr minmax(100px, auto)/1fr;
@@ -36,12 +45,19 @@ body{
     grid-area: header;
 }
 .main{
-    grid-area: main;
+    width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    min-height: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr 100px auto/1fr;
+    grid-template-areas: 
+        "player"
+        "playlist-name"
+        "track-list";
+    justify-items: center;
     align-items: center;
-    grid-template-rows: 1fr;
+    
 }
 
 .footer{

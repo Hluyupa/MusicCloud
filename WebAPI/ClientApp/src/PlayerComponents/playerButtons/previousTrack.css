@@ -1,0 +1,28 @@
+.background-prev-btn *{
+    fill: var(--white);
+}
+
+.border-prev-btn, .background-prev-btn{
+    position:absolute;
+}
+
+.border-prev-btn *{
+    fill: none;
+    stroke: var(--yellow-green);
+    stroke-width: 4;
+    
+}
+
+.border-prev-btn{
+    left:-55px;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.5s;
+
+}
+
+.prev-btn:hover .border-prev-btn{
+    opacity: 1;
+    left: 0px;
+
+}

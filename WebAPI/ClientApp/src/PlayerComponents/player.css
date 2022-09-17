@@ -1,7 +1,7 @@
 .player{
     width: 300px;
     height: 300px;
-   
+    grid-area: player;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr/1fr;
     grid-template-areas: 
