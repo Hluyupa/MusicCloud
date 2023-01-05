@@ -10,9 +10,7 @@ import TrackList from "./TrackListComponents/trackList";
 import ScrollBar from "./Components/scrollBar";
 
 export default class App extends React.Component{
-
-
-
+    
     render(){
         
         const menuElements = [
